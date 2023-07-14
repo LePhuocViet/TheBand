@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.white-color{
+    color: #fff !important;
+}
+
+.clear{
+clear: both;
+}
+main{
+
+}
+/*Header*/
+
+#header{
+    background-color: #000;
+    height: 46px;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.nav{
+    display: inline;
+}
+
+.nav>li {
+    
+    display: inline-block;
+}
+
+.nav li{
+    position: relative;
+}
+
+.nav,.subnav{
+    list-style-type: none;
+}
+
+.nav>li>a{
+    padding: 0px 24px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 46px;
+
+}
+
+.nav li a{
+    display: block;
+    text-decoration: none;  
+    font-size: 15px;
+    
+}
+
+.nav>li:hover>a{
+    background-color: #ccc;
+    color: #fff;
+}
+
+.nav .subnav{
+    min-width: 160px;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav .subnav li:hover{
+    background-color: #ccc;
+    
+
+}
+.nav .subnav a{
+    color: #000;
+    line-height: 30px;
+    padding: 8px 16px;
+
+}
+.search-nav{
+
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 15px;
+}
+#header .search-nav:hover{
+    cursor: pointer;
+    background-color: #ff0202;
+}
+
+/* slide */
+
+#slide{
+   position: relative;
+   margin-top: 46.5px;
+   padding-top: 50%;
+   background: url('/assets/image/slide/slide1.png') top center / cover no-repeat;
+}
+
+#slide .slide-main {
+    bottom: 48px;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    
+}
+
+#slide .slide-content{
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#slide .silde-ps{
+    font-size: 15px;
+    margin: 15px 0;
+    color: #ccc;
+}
+
+/* content */
+
+#content{
+    width: 800;
+}
+#content .content-text{
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+#content .text-heading{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#content .text-ps{
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+    font-size: 15px;
+}
+#content .text-content{
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+#content .member-list{
+    padding: 32px 0;
+}
+
+#content .member-iteam{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    
+}
+
+#content .member-name{
+    margin: 15px 0;
+    font: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Tour */
+#content .tour{
+background-color: #000;
+
+}
+
+#content .tour-list{
+    margin-top: 50px;
+    list-style-type: none;
+    background-color: #fff;
+    
+   
+}
+
+#content .tour-list li{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+    color: #ccc;
+}
+
+#content .tour-sold{
+    background-color: #ff0202;
+    padding: 0 8px;
+    margin: 0 0 0 16px;
+}
+
+#content .tour-unsold{
+    float: right;
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin: 0 16px 0 0;
+}
+
+#content .tour-ticket{
+    margin-left: -8px;
+    margin-bottom: 32px;
+    margin-right: -8px;
+    margin-top: 32px;
+    
+}
+#content .ticket-iteam{
+    float: left;
+    width: 33.3333%;
+    padding:0 8px;
+    
+}
+
+#content .ticket-list{
+    background-color: #fff;
+    padding:8px 16px;
+}
+
+#content .ticket-img{
+    width: 100%;
+    display: block;
+  
+}
+#content .ticket-img:hover{
+    opacity: 0.6;
+}
+
+#content .ticket-heading{
+  padding: 15px 0;
+}
+
+#content .text-ps{
+    padding: 15px 0;
+    opacity: 0.6;
+
+}
+
+#content .ticket-border{
+    padding: 15px 0;
+}
+
+#content .ticket-buy{
+    padding: 8px 16px;
+    margin: 0 0 16px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+}
+#content .ticket-buy:hover{
+    background-color: #ff0202;
+}
+
+
+
+
+

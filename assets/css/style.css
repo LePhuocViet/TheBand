@@ -3,6 +3,33 @@
     padding: 0;
     margin: 0;
 }
+.row{
+
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.col{ 
+    float: left;
+    padding:0 8px;     
+}
+.col-full{
+    width: 100%;
+}
+.col-third{
+     width: 33.3333%;
+}
+.col-haft{
+    width: 50%;
+}
+.text-center{
+    text-align: center;
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -166,13 +193,6 @@ main{
     padding: 32px 0;
 }
 
-#content .member-iteam{
-    float: left;
-    width: 33.3333%;
-    text-align: center;
-    
-}
-
 #content .member-name{
     margin: 15px 0;
     font: 15px;
@@ -218,19 +238,10 @@ background-color: #000;
 }
 
 #content .tour-ticket{
-    margin-left: -8px;
     margin-bottom: 32px;
-    margin-right: -8px;
     margin-top: 32px;
     
 }
-#content .ticket-iteam{
-    float: left;
-    width: 33.3333%;
-    padding:0 8px;
-    
-}
-
 #content .ticket-list{
     background-color: #fff;
     padding:8px 16px;
@@ -269,6 +280,39 @@ background-color: #000;
 }
 #content .ticket-buy:hover{
     background-color: #ff0202;
+}
+
+/* Contact */
+.contact .contact-content{
+    padding: 32px 0;
+}
+
+.contact .contact-infor{
+    font-size: 18px;
+}
+
+.contact-infor i{
+    width: 30PX;
+    display: inline-block;
+}
+
+.contact .contact-input{
+    font-size: 15px;
+    outline: none;
+}
+.contact .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact .submit{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+}
+.contact .submit:hover{
+    background-color: #ccc;
 }
 
 

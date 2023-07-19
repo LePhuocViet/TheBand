@@ -28,9 +28,13 @@
                
                 </li>
             </ul>
+            <div class="icon-mobile" id="mobile-menu">
+                <i class="ti-menu"></i>
+            </div>
             <div class="search-nav">
                 <i class="ti-search"></i>
             </div>
+            
         </div>
         <div id="slide">
             <img width="100%" src="./assets/image/slide/slide1.png" alt="" class="slide-img">
@@ -47,15 +51,15 @@
                 <p class="text-ps">We love music</p>
                 <p class="text-content">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="member-list">
-                    <div class="col col-third text-center">
+                    <div class="col col-third text-center mobile-member">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/team/bandmember.png" alt="" class="member-img">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third text-center mobile-member">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/team/bandmember.png" alt="" class="member-img">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third text-center mobile-member">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/team/bandmember.png" alt="" class="member-img">
                     </div>
@@ -73,7 +77,7 @@
                     <li>November<span class="tour-unsold white-color">3</span></li>
                 </ul>
                 <div class="row tour-ticket">
-                    <div class="col col-third">
+                    <div class="col col-third tour-mobile">
                         <img src="./assets/image/place/newyork.png" alt="" class="ticket-img">
                         <div class="ticket-list">
                         <h3 class="ticket-heading">New York</h3>
@@ -82,7 +86,7 @@
                         <a href="" class="ticket-buy">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="col col-third">
+                    <div class="col col-third tour-mobile">
                         <img src="./assets/image/place/paris.png" alt="" class="ticket-img">
                         <div class="ticket-list">
                         <h3 class="ticket-heading">Paris</h3>
@@ -91,7 +95,7 @@
                         <a href="" class="ticket-buy">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="col col-third">
+                    <div class="col col-third tour-mobile">
                         <img src="./assets/image/place/sanfran.png" alt="" class="ticket-img">
                         <div class="ticket-list">
                         <h3 class="ticket-heading">San Francisco</h3>
@@ -118,10 +122,10 @@
                             <div class="col col-haft contact-input">
                                 <form action="">
                                     <div class="row">
-                                        <div class="col col-haft">
+                                        <div class="col col-haft contact-mobile">
                                             <input type="text" name="" required="" placeholder="Name" id="" class="form-control">
                                         </div>
-                                        <div class="col col-haft">
+                                        <div class="col col-haft contact-mobile">
                                             <input type="email" name="" required="" placeholder="Mail" id="" class="form-control">
                                         </div>
                                         <div class="clear"></div>
@@ -158,10 +162,21 @@
                     <p class="footer-end">Powered by<a href="" > w3.css</a></p>
                 </div>
             </div>
-
         </div>
-
     </div>
     
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var height = header.clientHeight;
+        mobileMenu.onclick = function(){
+            var isClose = header.clientHeight === height;
+            if(isClose){
+                header.style.height = 'auto'
+            } else {
+                header.style.height = '46px'
+            }
+        }
+    </script>
 </body>
 </html>

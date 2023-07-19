@@ -17,6 +17,7 @@
 .mt-16{
     margin-top: 16px;
 }
+
 .col{ 
     float: left;
     padding:0 8px;     
@@ -58,11 +59,11 @@ main{
     left: 0;
     right: 0;
     position: fixed;
-   overflow: hidden;
+    overflow: hidden;
 }
 
 .nav{
-    display: inline;
+    display: inline-block;
 }
 
 .nav>li {
@@ -79,17 +80,19 @@ main{
 }
 
 .nav>li>a{
-    padding: 0px 24px;
+    
     color: #fff;
     text-transform: uppercase;
-    line-height: 46px;
+    
 
 }
 
 .nav li a{
+    padding: 0px 24px;
     display: block;
     text-decoration: none;  
     font-size: 15px;
+    line-height: 46px;
     
 }
 
@@ -115,18 +118,22 @@ main{
     
 
 }
+
 .nav .subnav a{
     color: #000;
     line-height: 30px;
     padding: 8px 16px;
 
 }
+.icon-mobile,
 .search-nav{
-
     float: right;
     color: #fff;
     line-height: 46px;
     padding: 0 15px;
+}
+.icon-mobile{
+    display: none;
 }
 #header .search-nav:hover{
     cursor: pointer;

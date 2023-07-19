@@ -1,9 +1,55 @@
 @media (min-width: 1024px){
-
+    #header{
+        overflow: visible;
+    }
 }
 @media (min-width: 720px ) and (max-width: 1024px){
-
+    #header{
+        overflow: visible;
+    }
 }
 @media (max-width: 720px){
-        
+    .nav>li{
+        display: block;
+    }
+    #content .member-img{
+        max-width: 100%;
+    }
+    #header{
+        overflow: hidden;
+    }
+    .nav{
+    }
+    .nav>li:first-child{
+        display: inline-block;
+    }
+   
+    .icon-mobile{
+        display: initial;
+    }
+    .search-nav{
+        display: none;
+    }
+    #content .mobile-member{
+        width: 100%;
+    }
+    #content .member-img{
+        width: 60%;
+        margin-bottom: 16px;
+    }
+    .tour-mobile{
+        width: 100%;
+        margin-top: 16px;
+    }
+    .contact .contact-infor{
+        width: 100%;
+        padding-bottom: 16px;
+    }
+    .contact .contact-input{
+        width: 100%;
+    }
+    .contact .contact-mobile{
+        width: 100%;
+    }
+
 }
